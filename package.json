@@ -1,6 +1,7 @@
 {
-  "entry point": "src/app.js",
+  "main": "src/server.js",
   "scripts": {
+    "start": "node src/server.js",
     "test": "jest"
   },
   "devDependencies": {
