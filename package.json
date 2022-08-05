@@ -4,8 +4,9 @@
     "start": "node src/server.js",
     "test": "jest",
     "docker:build": "docker build . -t tolgas/tech-stack",
-    "docker:run": "docker run -dp 3000:3000 tolgas/tech-stack",
-    "docker:stop": "docker stop $(docker ps -a | grep tolgas/tech-stack | awk '{print $1}')"
+    "docker:run": "docker run --name tech-stack -dp 3000:3000 tolgas/tech-stack",
+    "docker:stop": "docker stop $(docker ps -a | grep tolgas/tech-stack | awk '{print $1}')",
+    "docker:logs": "docker logs tech-stack"
   },
   "devDependencies": {
     "jest": "^28.1.3"
