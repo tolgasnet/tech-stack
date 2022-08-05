@@ -3,8 +3,8 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "jest",
-    "dockb": "docker build . -t tolgas/tech-stack",
-    "dockr": "docker run -dp 3000:3000 tolgas/tech-stack"
+    "docker:build": "docker build . -t tolgas/tech-stack",
+    "docker:run": "docker run -dp 3000:3000 tolgas/tech-stack"
   },
   "devDependencies": {
     "jest": "^28.1.3"
